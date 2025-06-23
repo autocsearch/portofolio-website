@@ -12,7 +12,7 @@ export default function HeroSection() {
           <h1 className="text-white max-w-2xl mb-4 sm:text-5xl lg:text-6xl text-4xl font-extrabold leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-200">Hi there, I&apos;m</span> <br />
             <span className="text-white text-4xl sm:text-5xl lg:text-6xl">
-              <TypeAnimation sequence={["Charles", 1000, "Web Developer", 1000]} wrapper="span" speed={50} className="inline-block" repeat={Infinity} />
+              <TypeAnimation sequence={["Muhamad Charles Cornelio", 1000, "Web Developer", 1000]} wrapper="span" speed={50} className="inline-block" repeat={Infinity} />
             </span>
           </h1>
           <p className="text-[#ADB7BE] mb-6 text-base sm:text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
