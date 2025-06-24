@@ -70,7 +70,7 @@ export default function Navbar() {
           </div>
           <div>
             <Popover>
-              <PopoverTrigger>
+              <PopoverTrigger asChild>
                 <Button variant={"secondary"} className="text-black">
                   Menu
                 </Button>

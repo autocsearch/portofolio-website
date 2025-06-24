@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroPage";
 import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
+import Projects from "@/app/Projects/page";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       </div>
       <div>
         <AboutSection />
+      </div>
+      <div>
+        <Projects />
       </div>
     </main>
   );

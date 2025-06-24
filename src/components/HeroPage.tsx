@@ -15,7 +15,7 @@ export default function HeroSection() {
               <TypeAnimation sequence={["Muhamad Charles Cornelio", 1000, "Web Developer", 1000]} wrapper="span" speed={50} className="inline-block" repeat={Infinity} />
             </span>
           </h1>
-          <p className="text-[#ADB7BE] mb-6 text-base sm:text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+          <p className="text-[#ADB7BE] mb-6 text-base sm:text-lg lg:text-xl">Fullstack web developer passionate about building clean, responsive, and scalable web applications using modern technologies like Next.js, Express, and MySQL. </p>
           <div className="flex gap-4 mt-6">
             <Button variant={"outline"} className="hover:bg-slate-200">
               Hire me
@@ -25,7 +25,7 @@ export default function HeroSection() {
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="bg-gradient-to-br from-blue-500 via-purple-300 to-pink-500 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative">
-            <Image src={"hello.svg"} alt="hello image" height={300} width={300} className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
+            <Image src={"Hello.svg"} alt="hello image" height={300} width={300} className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
           </div>
         </div>
       </div>
