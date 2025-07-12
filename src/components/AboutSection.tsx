@@ -1,68 +1,56 @@
 "use client";
 
 import Image from "next/image";
-import { SetStateAction, useState, useTransition } from "react";
-import TabButton from "./TabButton";
-
-const tabData = [
-  {
-    title: "skills",
-    id: "skills",
-    content: (
-      <ul>
-        <li>Node.js</li>
-        <li>Mysql</li>
-        <li>Express</li>
-        <li>Next js</li>
-        <li>Prisma</li>
-        <li>React</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Education",
-    id: "Education",
-    content: (
-      <ul>
-        <li>Purwadhika</li>
-        <li>Smas Budi Luhur</li>
-      </ul>
-    ),
-  },
-];
 
 export default function AboutSection() {
-  const [showTab, setShowTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
-
-  const handleTabChange = (id: SetStateAction<string>) => {
-    startTransition(() => {
-      setShowTab(id);
-    });
-  };
   return (
-    <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src={"/profile.svg"} alt="About me Image" height={500} width={500} className="rounded-3xl bg-slate-400" />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-3xl font-bold mb-4">About me</h2>
-          <p className="text-base lg:text-lg mb-2">
-            A passionate fullstack web developer with a strong foundation in building modern, scalable applications using technologies like Next.js, Express, MySQL, and Prisma. Dedicated to crafting clean, responsive user interfaces and
-            efficient backend systems, with hands-on experience in developing full-featured projects such as rental platforms and event management systems.
-          </p>
-          <p className="text-base lg:text-lg">
-            Always eager to learn and improve, I enjoy tackling complex challenges and turning ideas into real-world solutions. Whether collaborating on a team or working independently, I strive to deliver work that is both functional and
-            thoughtfully designed.
-          </p>
-          <div className="flex flex-row mt-8">
-            <TabButton selectTab={() => handleTabChange("skills")} active={showTab === "skills"}>
-              Skills
-            </TabButton>
-            <TabButton selectTab={() => handleTabChange("Education")} active={showTab === "Education"}>
-              Educations
-            </TabButton>
+    <section className="px-4 sm:px-6 py-16 bg-white">
+      <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
+
+      <div className="flex flex-col gap-6 max-w-6xl mx-auto">
+        {/* Row 1 */}
+        <div className="flex flex-col md:flex-row gap-4">
+          {/* Profile Image */}
+          <div className="bg-blue-100 p-6 rounded-xl flex flex-1 items-center justify-center">
+            <Image src="/profile.svg" width={300} height={300} alt="Profile" className="h-40 sm:h-48 md:h-64 object-contain" />
           </div>
-          <div className="mt-8 hover:mask-b-to-purple-600">{tabData.find((t) => t.id === showTab)?.content}</div>
+
+          {/* Skills */}
+          <div className="bg-green-100 p-6 rounded-xl flex flex-col w-full md:w-[400px] justify-center items-center">
+            <h4 className="font-semibold mb-2 text-lg">🧠 Skills</h4>
+            <ul className="text-sm space-y-1 text-center">
+              <li>Next.js</li>
+              <li>Express</li>
+              <li>MySQL</li>
+              <li>Prisma</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Row 2 */}
+        <div className="flex flex-col md:flex-row gap-4">
+          {/* Education */}
+          <div className="bg-orange-100 p-6 rounded-xl flex flex-col w-full md:w-[400px] justify-center">
+            <h4 className="font-semibold mb-2 text-lg">🎓 Where I’ve Studied</h4>
+            <ul className="text-sm space-y-1">
+              <li>
+                <span className="font-medium">Purwadhika</span> — Fullstack Web Development Bootcamp
+              </li>
+              <li>
+                <span className="font-medium">Smas Budi Luhur</span> — High School
+              </li>
+            </ul>
+          </div>
+
+          {/* Description */}
+          <div className="bg-blue-50 p-6 rounded-xl flex flex-col flex-1 justify-center">
+            <h3 className="text-xl font-bold mb-2">👋 Hey, I&apos;m Charles</h3>
+            <p className="text-sm text-gray-700">
+              A passionate fullstack web developer focused on building clean, responsive, and scalable apps using Next.js, Express, MySQL, and Prisma. I&apos;m always eager to learn and deliver thoughtfully designed solutions.
+            </p>
+          </div>
         </div>
       </div>
     </section>

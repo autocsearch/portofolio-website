@@ -21,11 +21,11 @@ export default function Navbar() {
   const NavbarPages = [
     {
       name: "Home",
-      href: "/home",
+      href: "/",
     },
     {
       name: "About me",
-      href: "/AboutMe",
+      href: "/AboutSection",
     },
     {
       name: "Projects",
@@ -37,10 +37,10 @@ export default function Navbar() {
     },
   ];
   return (
-    <nav className={`fixed left-0 top-0 z-20 w-full transition-all duration-300 ${isScrolled ? "bg-[#121212] " : "bg-transparent"}`}>
+    <nav className={`fixed left-0 top-0 z-20 w-full transition-all duration-300 ${isScrolled ? "bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-md" : "bg-transparent"}`}>
       <div>
         {/* Navbar desktop */}
-        <div className="justify-between items-center h-12 text-white hidden lg:flex p-6">
+        <div className="justify-between items-center h-12 text-black hidden lg:flex p-6">
           <div>
             <Link href={"/"} className="font-bold text-3xl p-6">
               Charles.Dev
@@ -64,7 +64,7 @@ export default function Navbar() {
         {/* Mobile Navbar */}
         <div className="flex justify-between items-center h-12 lg:hidden p-6">
           <div>
-            <Link href={"/"} className="text-white font-bold text-3xl">
+            <Link href={"/"} className="text-black font-bold text-3xl">
               Charles.Dev
             </Link>
           </div>
