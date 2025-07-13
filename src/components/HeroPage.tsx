@@ -30,7 +30,7 @@ export default function HeroSection() {
         </div>
 
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="bg-gradient-to-br from-[#c0ffe3] via-[#abf7b6] to-[#e0f7ec] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative">
+          <div className="bg-gradient-to-br from-[#c0ffe3] via-[#abf7b6] to-[#e0f7ec] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-3xl relative">
             <Image src={"Hello.svg"} alt="hello image" height={300} width={300} className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
           </div>
         </div>

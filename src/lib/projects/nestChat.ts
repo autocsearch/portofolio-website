@@ -13,27 +13,27 @@ const nestchat = {
   screenshots: [
     {
       title: "Login Page",
-      image: "/projects/nestchat/login.jpg",
+      image: "/Projects/nestchat/login.jpg",
       description: "Google sign-in screen with NestChat branding.",
     },
     {
       title: "Chat Interface",
-      image: "/projects/nestchat/chat-ui.jpg",
+      image: "/Projects/nestchat/chat-ui.jpg",
       description: "Clean real-time chat UI with message bubbles and live typing.",
     },
     {
       title: "dashboard",
-      image: "/projects/nestchat/dashboard.jpg",
+      image: "/Projects/nestchat/dashboard.jpg",
       description: "dashboard you could see your recent chat.",
     },
     {
       title: "friend request",
-      image: "/projects/nestchat/friendRequest.jpg",
+      image: "/Projects/nestchat/friendRequest.jpg",
       description: "friend request ui.",
     },
     {
       title: "add friend",
-      image: "/projects/nestchat/addFriend.jpg",
+      image: "/Projects/nestchat/addFriend.jpg",
       description: "friend request ui.",
     },
   ],

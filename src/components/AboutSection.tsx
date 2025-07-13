@@ -12,7 +12,7 @@ export default function AboutSection() {
         <div className="flex flex-col md:flex-row gap-4">
           {/* Profile Image */}
           <div className="bg-blue-100 p-6 rounded-xl flex flex-1 items-center justify-center">
-            <Image src="/profile.svg" width={300} height={300} alt="Profile" className="h-40 sm:h-48 md:h-64 object-contain" />
+            <Image src={"about.svg"} width={300} height={300} alt="Profile" className="h-40 sm:h-48 md:h-64 object-contain" />
           </div>
 
           {/* Skills */}
