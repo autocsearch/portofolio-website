@@ -45,7 +45,7 @@ export default function AboutSection() {
           </div>
 
           {/* Description */}
-          <div className="bg-blue-50 p-6 rounded-xl flex flex-col flex-1 justify-center">
+          <div className="bg-blue-50 p-6 rounded-xl flex flex-col flex-1 justify-center w-[300px] h-[300px]">
             <h3 className="text-xl font-bold mb-2">👋 Hey, I&apos;m Charles</h3>
             <p className="text-sm text-gray-700">
               A passionate fullstack web developer focused on building clean, responsive, and scalable apps using Next.js, Express, MySQL, and Prisma. I&apos;m always eager to learn and deliver thoughtfully designed solutions.

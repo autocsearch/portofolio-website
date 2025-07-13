@@ -31,22 +31,27 @@ export default function Contact() {
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setIsLoading(true);
     try {
-      const res = await fetch("/api/send", {
+      const res = await fetch("https://formspree.io/f/xvgqpzzr", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        }),
       });
+
       if (res.ok) {
-        toast.success("🎉Email sent succesfully!");
+        toast.success("🎉 Message sent!");
         form.reset();
       } else {
-        toast.error("❌ Failed to send Email.");
+        toast.error("❌ Failed to send message.");
       }
     } catch (error) {
-      console.error(error);
       toast.error("⚠️ Something went wrong.");
+      console.error(error);
     } finally {
       setIsLoading(false);
     }

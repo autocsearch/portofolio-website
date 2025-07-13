@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -19,8 +20,12 @@ export default function HeroSection() {
           </p>
 
           <div className="flex gap-4 mt-6 flex-wrap">
-            <Button variant={"outline"}>Hire me</Button>
-            <Button>Download Cv</Button>
+            <Link href={"https://www.linkedin.com/in/muhamad-charles-cornelio-a53a75339/"} target="_blank">
+              <Button variant={"outline"}>Hire me</Button>
+            </Link>
+            <Link href={"resume.pdf"} target="_blank">
+              <Button>View CV</Button>
+            </Link>
           </div>
         </div>
 

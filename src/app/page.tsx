@@ -34,7 +34,7 @@ export default function Home() {
             Resume
           </Link>
 
-          <Link href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
+          <Link href="https://www.linkedin.com/in/muhamad-charles-cornelio-a53a75339/" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
             LinkedIn
           </Link>
         </div>
