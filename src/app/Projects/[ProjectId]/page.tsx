@@ -6,15 +6,15 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import Image from "next/image";
 
 type Props = {
-  params: Promise<{
+  params: {
     projectId: string;
-  }>;
+  };
 };
 
 export default async function ProjectDetailPage({ params }: Props) {
-  const { projectId } = await params;
+  const { projectId } = params;
 
-  const project = allProjects.find((p) => p.slug.toLowerCase() === projectId);
+  const project = allProjects.find((p) => p.slug.toLowerCase() === projectId.toLowerCase());
 
   if (!project) return notFound();
 
