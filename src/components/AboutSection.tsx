@@ -12,19 +12,31 @@ export default function AboutSection() {
         <div className="flex flex-col md:flex-row gap-4">
           {/* Profile Image */}
           <div className="bg-blue-100 p-6 rounded-xl flex flex-1 items-center justify-center">
-            <Image src={"about.svg"} width={300} height={300} alt="Profile" className="h-40 sm:h-48 md:h-64 object-contain" />
+            <Image src={"/about.svg"} width={300} height={300} alt="Profile" className="h-40 sm:h-48 md:h-64 object-contain" />
           </div>
 
           {/* Skills */}
           <div className="bg-green-100 p-6 rounded-xl flex flex-col w-full md:w-[400px] justify-center items-center">
             <h4 className="font-semibold mb-2 text-lg">🧠 Skills</h4>
             <ul className="text-sm space-y-1 text-center">
-              <li>Next.js</li>
-              <li>Express</li>
-              <li>MySQL</li>
-              <li>Prisma</li>
-              <li>React</li>
-              <li>Node.js</li>
+              <li className="flex gap-3">
+                <Image src={"/nextjs.svg"} alt="next js icon" height={30} width={30} /> Next.js
+              </li>
+              <li className="flex gap-3">
+                <Image src={"/Express.svg"} alt="next js icon" height={30} width={30} /> Express
+              </li>
+              <li className="flex gap-3">
+                <Image src={"/MySQL.svg"} alt="next js icon" height={30} width={30} /> MySQL
+              </li>
+              <li className="flex gap-3">
+                <Image src={"/prisma.svg"} alt="next js icon" height={30} width={30} /> Prisma
+              </li>
+              <li className="flex gap-3">
+                <Image src={"/react.svg"} alt="next js icon" height={30} width={30} /> React
+              </li>
+              <li className="flex gap-3">
+                <Image src={"/node.js.svg"} alt="next js icon" height={30} width={30} /> Node.js
+              </li>
             </ul>
           </div>
         </div>
