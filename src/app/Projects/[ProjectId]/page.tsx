@@ -6,31 +6,28 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import Image from "next/image";
 
 type Props = {
-  params: {
+  params: Promise<{
     projectId: string;
-  };
+  }>;
 };
 
 export default function ProjectDetailPage({ params }: Props) {
-  const project = allProjects.find((p) => p.slug.toLowerCase() === params.projectId.toLowerCase());
+  const project = allProjects.find(async (p) => p.slug.toLowerCase() === (await params).projectId.toLowerCase());
 
   if (!project) return notFound();
 
   return (
     <section className="max-w-6xl mx-auto px-4 py-12 space-y-12">
-      {/* Title + Short Description */}
       <div className="space-y-4">
         <h1 className="text-4xl font-bold text-primary">{project.overview.title}</h1>
         <p className="text-muted-foreground whitespace-pre-line">{project.overview.shortDescription}</p>
       </div>
 
-      {/* Full Description */}
       <div>
         <h2 className="text-2xl font-semibold mb-4 border-b-2 border-black w-fit">Project Description</h2>
         <p className="text-muted-foreground whitespace-pre-line">{project.description}</p>
       </div>
 
-      {/* Tech Stack */}
       <div>
         <h2 className="text-2xl font-semibold mb-4 border-b-2 border-black w-fit">Tech Stack</h2>
         <div className="flex flex-wrap gap-3">
@@ -42,7 +39,6 @@ export default function ProjectDetailPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Screenshots Carousel */}
       <div>
         <h2 className="text-2xl font-semibold mb-6 border-b-2 border-black w-fit">Screenshots</h2>
         <Carousel opts={{ align: "start", loop: true }} className="w-full">
