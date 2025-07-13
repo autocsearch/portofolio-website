@@ -3,7 +3,7 @@ import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader,
 // import { FaLink } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
-import { allProjects } from "@/lib/projects/main";
+import { allProjects } from "@/lib/projectDetails/main";
 
 export default function ProjectLists() {
   return (

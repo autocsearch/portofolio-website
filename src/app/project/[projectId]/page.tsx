@@ -1,4 +1,4 @@
-import { allProjects } from "@/lib/projects/main";
+import { allProjects } from "@/lib/projectDetails/main";
 import { notFound } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
