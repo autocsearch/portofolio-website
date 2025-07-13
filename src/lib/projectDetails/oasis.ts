@@ -29,22 +29,22 @@ const oasis = {
   screenshots: [
     {
       title: "Tenant Dashboard",
-      image: "/Projects/ProjectDetail/tenantPage.jpg",
+      image: "/ProjectImage/ProjectDetail/tenantPage.jpg",
       description: "Overview for property owners to manage and monitor their listings in one place.",
     },
     {
       title: "Property Detail Page",
-      image: "/Projects/ProjectDetail/property-detail-page.jpg",
+      image: "/ProjectImage/ProjectDetail/property-detail-page.jpg",
       description: "Full info about a selected property — images, availability, amenities, and more.",
     },
     {
       title: "Create Room",
-      image: "/Projects/ProjectDetail/create-room-picture.jpg",
+      image: "/ProjectImage/ProjectDetail/create-room-picture.jpg",
       description: "Form to create rooms with pricing, capacity, and media for each listing.",
     },
     {
       title: "Geolocation Integration",
-      image: "/Projects/ProjectDetail/edit-property-page.jpg",
+      image: "/ProjectImage/ProjectDetail/edit-property-page.jpg",
       description: "Automatically pin properties on the map with latitude/longitude input.",
     },
   ],
