@@ -14,7 +14,7 @@ type Props = {
 export default async function ProjectDetailPage({ params }: Props) {
   const { projectId } = await params;
 
-  const project = allProjects.find((p) => p.slug.toLowerCase() === projectId.toLowerCase());
+  const project = allProjects.find((p) => p.slug.toLowerCase() === projectId);
 
   if (!project) return notFound();
 
