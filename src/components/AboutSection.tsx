@@ -35,7 +35,7 @@ export default function AboutSection() {
                 <Image src={"/react.svg"} alt="next js icon" height={30} width={30} /> React
               </li>
               <li className="flex gap-3">
-                <Image src={"/node.js.svg"} alt="next js icon" height={30} width={30} /> Node.js
+                <Image src={"/Node.js.svg"} alt="next js icon" height={30} width={30} /> Node.js
               </li>
             </ul>
           </div>
