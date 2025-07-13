@@ -19,22 +19,10 @@ export default function Navbar() {
   }, []);
 
   const NavbarPages = [
-    {
-      name: "Home",
-      href: "/",
-    },
-    {
-      name: "About me",
-      href: "/AboutSection",
-    },
-    {
-      name: "Projects",
-      href: "/Projects",
-    },
-    {
-      name: "Contact",
-      href: "/Contact",
-    },
+    { name: "Home", href: "#hero" },
+    { name: "About me", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
   return (
     <nav className={`fixed left-0 top-0 z-20 w-full transition-all duration-300 ${isScrolled ? "bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-md" : "bg-transparent"}`}>

@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroPage";
 import AboutSection from "@/components/AboutSection";
-import Projects from "@/app/projects/page";
+import Projects from "@/components/ProjectList";
 import Contacts from "@/components/Contact";
 
 import Link from "next/link";
@@ -8,16 +8,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#ffffff]">
-      <div className="container mx-auto px-12 py-4">
+      <div className="container mx-auto px-12 py-4" id="hero">
         <HeroSection />
       </div>
-      <div>
+      <div id="about">
         <AboutSection />
       </div>
-      <div>
+      <div id="projects">
         <Projects />
       </div>
-      <div>
+      <div id="contact">
         <Contacts />
       </div>
 
@@ -25,7 +25,6 @@ export default function Home() {
         <span>© {new Date().getFullYear()} Charles.Dev</span>
 
         <div className="flex justify-center space-x-5">
-          {/* External links still use <a> */}
           <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
             GitHub
           </Link>
