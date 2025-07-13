@@ -12,9 +12,11 @@ type Props = {
 };
 
 export default async function ProjectDetailPage({ params }: Props) {
+  console.log("params:", params); // logs Promise object
   const { projectId } = await params;
-
+  console.log("projectId:", projectId);
   const project = allProjects.find((p) => p.slug.toLowerCase() === projectId.toLowerCase());
+  console.log("project found:", project);
 
   if (!project) return notFound();
 
