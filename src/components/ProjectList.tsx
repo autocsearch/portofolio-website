@@ -14,7 +14,7 @@ export default function ProjectLists() {
       <div className="w-full flex justify-center">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 p-6 max-w-7xl w-full">
           {allProjects.map((project, index) => (
-            <Link href={`/projects/${project.slug}`} key={index} className="hover">
+            <Link href={`/project/${project.slug}`} key={index} className="hover">
               <Card className="w-full max-w-sm  hover:shadow-lg transition-transform hover:scale-[1.02] group h-full bg-gradient-to-br from-white via-gray-100 to-gray-50 p-6 rounded-xl shadow">
                 <CardHeader>
                   <CardTitle>{project.overview.title}</CardTitle>
