@@ -11,8 +11,10 @@ type Props = {
   }>;
 };
 
-export default function ProjectDetailPage({ params }: Props) {
-  const project = allProjects.find(async (p) => p.slug.toLowerCase() === (await params).projectId.toLowerCase());
+export default async function ProjectDetailPage({ params }: Props) {
+  const { projectId } = await params;
+
+  const project = allProjects.find((p) => p.slug.toLowerCase() === projectId.toLowerCase());
 
   if (!project) return notFound();
 
